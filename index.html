@@ -3,21 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+
     <title>Logan's Weather Dashboard</title>
 </head>
 <body>
-    <header>Logan's Weather Dashboard</header>
+    <h1 style="text-align: center" >Logan's Weather Dashboard</h1>
     
-    <div class="container">
+    <!--Main page container-->
+    <div id="mainPageContainer" class="container">
         <div class= "row">
             <div class="col-md-3">
-                <!--Search information goes here-->
+                <!--For the search and recent searches column-->
+                <div id="searchContainer" class="container">
+                    <form>
+                        <div class="form-group">
+                            <label for="searchTitle">Search for a City:</label>
+                            <input type="password" class="form-control" id="userInputCity">
+                          </div>
+                          <button id="searchBtn" type="button" class="btn btn-primary"> <span class="glyphicon glyphicon-search"></span> 
+                        </button>
+                    </form>
+                </div>
             </div>
+
             <div class="col-md-9">
+                <!--For the current weather section-->
+                <div id="currentWeatherContainer" class="container">
+                        <div id= "currentWeatherRow" class="row">
+                            <h2 id="">City/Date/Symbol</h2>
+                        </div>
+                        <br>
+                        <div id= "tempRow" class="row">
+                            <text>Temperature: </text>
+                        </div>
+                        <br>
+                        <div id= "humidityRow" class="row">
+                            <text>Humidity: </text>
+                        </div>
+                        <br>
+                        <div id= "humidityRow" class="row">
+                            <text>Wind Speed: </text>
+                        </div>
+                        <br>
+                        <div id= "humidityRow" class="row">
+                            <text>UV Index: </text>
+                        </div>
+                </div>
+                <div id="fiveDayForecastContainer" class="container">
+
+                </div>
                 <!--Response data and 5 day forecast goes here-->
             </div>
         </div>
-
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
