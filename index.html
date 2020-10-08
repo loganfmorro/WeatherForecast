@@ -20,10 +20,9 @@
                     <form>
                         <div class="form-group">
                             <label for="searchTitle">Search for a City:</label>
-                            <input type="password" class="form-control" id="userInputCity">
+                            <input class="form-control" id="userInputCity">
                           </div>
-                          <button id="searchBtn" type="button" class="btn btn-primary"> <span class="glyphicon glyphicon-search"></span> 
-                        </button>
+                          <button id="searchBtn" type="button" class="btn btn-primary">Search</button>
                     </form>
                 </div>
             </div>
@@ -31,8 +30,8 @@
             <div class="col-md-9">
                 <!--For the current weather section-->
                 <div id="currentWeatherContainer" class="container">
-                        <div id= "currentWeatherRow" class="row">
-                            <h2 id="">City/Date/Symbol</h2>
+                        <div id= "cityRow" class="row">
+                            <h4 id="cityRowH4"></h4>
                         </div>
                         <br>
                         <div id= "tempRow" class="row">
@@ -43,18 +42,44 @@
                             <text>Humidity: </text>
                         </div>
                         <br>
-                        <div id= "humidityRow" class="row">
+                        <div id= "windSpeedRow" class="row">
                             <text>Wind Speed: </text>
                         </div>
                         <br>
-                        <div id= "humidityRow" class="row">
+                        <div id= "uvRow" class="row">
                             <text>UV Index: </text>
                         </div>
                 </div>
+                <br><br>
+                <!--5 day forecast reponse goes here-->
                 <div id="fiveDayForecastContainer" class="container">
+                    <div class="row">
+                        <h4>5 Day Forecast:</h4>
+                    </div>
+                    <div display= "none" class="row">
+                        <div class= "5day" class="col-md-2">
+                            <h5 class="dateHeader"></h5>
 
+                        </div>
+                        <div class= "5day" class="col-md-2">
+                            <h5 class="dateHeader"></h5>
+
+                        </div>
+                        <div class= "5day" class="col-md-2">
+                            <h5 class="dateHeader"></h5>
+
+                        </div>
+                        <div class= "5day" class="col-md-2">
+                            <h5 class="dateHeader"></h5>
+
+                        </div>
+                        <div class= "5day" class="col-md-2">
+                            <h5 class="dateHeader"></h5>
+
+                        </div>
+                    </div>
                 </div>
-                <!--Response data and 5 day forecast goes here-->
+                
             </div>
         </div>
     </div>
